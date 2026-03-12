@@ -1,0 +1,4 @@
+PyQt5 == 5.15.10
+pyautogui
+pyttsx3
+beautifulsoup4
