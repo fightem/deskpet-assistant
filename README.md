@@ -125,15 +125,34 @@ python rumia.py
 
 ```
 RumiaPet-main/
+├── ai-paper-assister-main/ # 论文助手模块
+│   ├── PaperCompanion/     # 论文助手核心
+│   │   ├── assets/         # 资源文件
+│   │   ├── font/           # 字体文件
+│   │   ├── processor/      # 论文处理模块
+│   │   ├── prompt/         # 提示词模板
+│   │   ├── ui/             # 界面组件
+│   │   ├── utils/          # 工具模块
+│   │   ├── AI_manager.py   # AI功能管理器
+│   │   ├── AI_professor_UI.py # 主界面实现
+│   │   ├── AI_professor_chat.py # AI对话逻辑
+│   │   ├── config.py       # 配置文件
+│   │   ├── data_manager.py # 数据管理器
+│   │   ├── main.py         # 程序入口
+│   │   ├── pipeline.py     # 处理管线
+│   │   └── rag_retriever.py # RAG检索系统
+│   ├── tools/              # 工具目录
+│   ├── download_models.py  # 模型下载脚本
+│   └── requirements.txt    # 依赖列表
+│
 ├── data/                 # 数据目录
 │   ├── academic/         # 学术相关数据
 │   ├── campus/           # 校园相关数据
 │   ├── font/             # 字体文件
 │   ├── icon/             # 图标文件
-│   ├── rumia/            # 宠物形象和动作资源
-│   ├── schedule/         # 日程数据
-│   ├── web/              # 网络相关数据
-│   └── crawler_config.json # 爬虫配置文件
+│   ├── market_cache/     # 股票市场缓存
+│   ├── crawler_config.json # 爬虫配置文件
+│   └── favorite_stocks.json # 收藏股票配置
 │
 ├── ui/                   # 用户界面模块
 │   ├── data/             # UI相关数据
